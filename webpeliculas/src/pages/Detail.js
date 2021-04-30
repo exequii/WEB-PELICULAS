@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 
-const API_KEY ='d664e9fa'
+const API_KEY ='c249a5c4'
 
 export class Detail extends Component{
     static propTypes = {
@@ -20,14 +20,34 @@ export class Detail extends Component{
             })
     }
 
+    goBack(){
+        window.history.back()
+    }
+
     componentDidMount() {
-        const {id} = this.props
+        const { id } = this.props
         this.fetchMovie({id})
     }
 
     render(){
+        const {Title, Poster, Actors, Metascore, Plot} = this.state.movie
         return (
-            <p>Pagina de Detalle</p>
+            <div>
+                <button onClick={this.goBack}>Volver</button>
+                <h1>
+                    {Title}
+                </h1>
+                <img src={Poster} alt=""/>
+                <h3>
+                    {Actors}
+                </h3>
+                <span>
+                    {Metascore}
+                </span>
+                <p>
+                    {Plot}
+                </p>
+            </div>
         )
     }
 }

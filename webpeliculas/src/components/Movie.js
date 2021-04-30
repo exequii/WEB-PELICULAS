@@ -13,7 +13,7 @@ export class Movie extends Component {
         const{id, poster, title, year} = this.props
 
         return (
-            <a href={`?id=id${id}`} className="card">
+            <a href={`?id=${id}`} className="card">
                 <div className="card-image">
                     <figure className="image">
                     <img 
