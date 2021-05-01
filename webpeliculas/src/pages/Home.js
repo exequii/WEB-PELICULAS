@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import 'bulma/css/bulma.css'
 
 import {Title} from '../components/Title'
 import {SearchForm} from '../components/SearchForm'
 import { MoviesList } from '../components/MoviesList'
+import {NavBar} from '../components/NavBar'
 
 import {Detail} from '../pages/Detail'
 
@@ -32,6 +34,7 @@ export class Home extends Component {
   
     return (
         <div>
+        <NavBar></NavBar>
         <Title>Buscador de Peliculas</Title>
         <div className="searchContainer">
           <SearchForm onResults={this.handleResults}></SearchForm>
