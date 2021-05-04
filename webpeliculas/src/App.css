@@ -7,6 +7,25 @@
   justify-content: center;
 }
 
+/***************************************************************************************************/
+#carouselExampleDark{
+  height: 100% !important;
+}
+/****************************************************************************************************/
+.navbar{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px !important;
+}
+.navbar-item, .navbar-item a{
+  text-decoration: none !important;
+  height: 100% !important;
+}
+
+/***************************************************************************************************/
+
 .MoviesList{
   display: flex;
   flex-wrap: wrap;
@@ -15,6 +34,65 @@
 }
 
 .MoviesList-item{
+  padding: 10px;
   margin-bottom: 24px;
-  width: 24%;
+  width: 18%;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+/**************************************************************************************************/
+.footer{
+  background-color: rgb(73, 73, 73) !important;
+  color: white;
+  padding: 0;
+}
+
+.footer p , .footer strong{
+  color: white;
+}
+
+.footer-subscription p{
+  font-size: 1em;
+  font-style: italic;
+}
+
+.footer-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-link-wrapper{
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+
+.footer-link-items{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.footer-link-items h2{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footer-link-items a{
+  color: white;
+}
+
+.footer-input::placeholder{
+  text-align: center;
+}
+
+.footer-input{
+  width: 25%;
+  padding: 10px;
+  margin: 15px 0px 15px 0px;
+  
 }

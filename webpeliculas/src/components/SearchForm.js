@@ -40,7 +40,7 @@ export class SearchForm extends Component{
                     </div>
                     <div className="control">
                         <button className="button is-info">
-                        Search
+                        Buscar
                         </button>
                     </div>
                 </div>

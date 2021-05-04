@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import 'bulma/css/bulma.css'
 
+import {Link} from 'react-router-dom'
+
 
 export class NavBar extends Component {
 
@@ -9,9 +11,9 @@ export class NavBar extends Component {
             
             <nav className="navbar is-danger" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="https://bulma.io">
+                    <Link className="navbar-item" href="https://bulma.io">
                     <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
-                    </a>
+                    </Link>
 
                     <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
@@ -22,33 +24,33 @@ export class NavBar extends Component {
 
                 <div id="navbarBasicExample" class="navbar-menu">
                     <div className="navbar-start">
-                    <a className="navbar-item">
+                    <Link className="navbar-item">
                         Home
-                    </a>
+                    </Link>
 
-                    <a className="navbar-item">
+                    <Link className="navbar-item">
                         Peliculas
-                    </a>
+                    </Link>
 
                     <div className="navbar-item has-dropdown is-hoverable">
-                        <a className="navbar-link">
+                        <Link className="navbar-link">
                         Detalle
-                        </a>
+                        </Link>
 
                         <div className="navbar-dropdown">
-                        <a className="navbar-item">
-                            About
-                        </a>
-                        <a className="navbar-item">
-                            Jobs
-                        </a>
-                        <a className="navbar-item">
-                            Contact
-                        </a>
+                        <Link className="navbar-item">
+                            Sobre Nosotros
+                        </Link>
+                        <Link className="navbar-item">
+                            Oportunidades
+                        </Link>
+                        <Link className="navbar-item">
+                            Contacto
+                        </Link>
                         <hr className="navbar-divider"/>
-                        <a className="navbar-item">
-                            Report an issue
-                        </a>
+                        <Link className="navbar-item">
+                            Reportar falla
+                        </Link>
                         </div>
                     </div>
                     </div>
@@ -56,12 +58,12 @@ export class NavBar extends Component {
                     <div className="navbar-end">
                     <div className="navbar-item">
                         <div className="buttons">
-                        <a className="button is-primary">
-                            <strong>Sign up</strong>
-                        </a>
-                        <a className="button is-light">
-                            Log in
-                        </a>
+                        <Link className="button is-primary">
+                            <strong>Registrate!</strong>
+                        </Link>
+                        <Link className="button is-light">
+                            Iniciar Sesion
+                        </Link>
                         </div>
                     </div>
                     </div>
