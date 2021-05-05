@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {Link} from 'react-router-dom'
 import {BackToHome} from '../components/BackToHome'
 
 const API_KEY ='c249a5c4'

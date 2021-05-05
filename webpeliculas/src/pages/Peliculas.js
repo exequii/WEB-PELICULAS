@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import 'bulma/css/bulma.css'
 
 import {Title} from '../components/Title'
 import {SearchForm} from '../components/SearchForm'
 import { MoviesList } from '../components/MoviesList'
 import {NavBar} from '../components/NavBar'
 import {Footer} from '../components/Footer'
+import {Movie} from '../components/Movie'
 
 import {Detail} from '../pages/Detail'
 
@@ -35,15 +35,23 @@ export class Peliculas extends Component {
   
     return (
         <div>
-        <NavBar></NavBar>
-        <Title>Buscador de Peliculas</Title>
-        <div className="searchContainer">
-          <SearchForm onResults={this.handleResults}></SearchForm>
-        </div>
+          <NavBar></NavBar>
+          <div className="fondoVideo">
+            <div className="relleno relative">
+              <Title>Buscador de Peliculas</Title>
+              <div className="searchContainer">
+                <SearchForm onResults={this.handleResults}></SearchForm>
+              </div>
+            </div>
             {this.state.usedSearch
             ? this.renderResults()
-            : <small>Utilice el formulario para la busqueda</small>
+            : <div className="relative">
+                <h2 className="title m-5 relative">Encontra tu pelicula favorita!</h2>
+                <p className="m-5">Ingresa el nombre de la pelicula.</p>
+                <p className="m-5">Elegi la opcion que estas buscando.</p>
+             </div>
             }
+          </div>
           <Footer></Footer>
         </div>
         

@@ -12,7 +12,7 @@ export class Carrousel extends Component {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg"
+                        src="https://i.blogs.es/d93d8d/marvel/1366_2000.jpeg"
                         alt="First slide"
                         />
                         <Carousel.Caption>
@@ -23,7 +23,7 @@ export class Carrousel extends Component {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg"
+                        src="https://i.blogs.es/69fdcc/star-wars-saga/1366_2000.jpg"
                         alt="Second slide"
                         />
 
@@ -35,7 +35,7 @@ export class Carrousel extends Component {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg"
+                        src="https://eloutput.com/app/uploads-eloutput.com/2020/11/universo-dc-2.jpg"
                         alt="Third slide"
                         />
 

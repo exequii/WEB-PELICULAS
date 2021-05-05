@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import {NavBar} from '../components/NavBar'
 import {Footer} from '../components/Footer'
 import {Carrousel} from '../components/Carrousel'
+import {Title} from '../components/Title'
 
 import {Detail} from '../pages/Detail'
 

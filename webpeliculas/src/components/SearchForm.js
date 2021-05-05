@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import 'bulma/css/bulma.css'
 const API_KEY ='c249a5c4'
 
 export class SearchForm extends Component{
