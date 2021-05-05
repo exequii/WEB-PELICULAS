@@ -8,8 +8,9 @@
 }
 
 /***************************************************************************************************/
-#carouselExampleDark{
-  height: 100% !important;
+.carousel-inner {
+  height: 100%;
+  background: transparent;
 }
 /****************************************************************************************************/
 .navbar{
@@ -22,6 +23,11 @@
 .navbar-item, .navbar-item a{
   text-decoration: none !important;
   height: 100% !important;
+}
+
+.navbar-brand{
+  padding-top: .5135em !important;
+  padding-left: .5132em !important;
 }
 
 /***************************************************************************************************/

@@ -1,7 +1,9 @@
 import React,{Component} from 'react'
-import 'bulma/css/bulma.css'
 
-import {Link} from 'react-router-dom'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 export class NavBar extends Component {
@@ -9,66 +11,38 @@ export class NavBar extends Component {
     render(){
         return (
             
-            <nav className="navbar is-danger" role="navigation" aria-label="main navigation">
-                <div className="navbar-brand">
-                    <Link className="navbar-item" href="https://bulma.io">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
-                    </Link>
-
-                    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    </a>
-                </div>
-
-                <div id="navbarBasicExample" class="navbar-menu">
-                    <div className="navbar-start">
-                    <Link className="navbar-item">
-                        Home
-                    </Link>
-
-                    <Link className="navbar-item">
-                        Peliculas
-                    </Link>
-
-                    <div className="navbar-item has-dropdown is-hoverable">
-                        <Link className="navbar-link">
-                        Detalle
-                        </Link>
-
-                        <div className="navbar-dropdown">
-                        <Link className="navbar-item">
-                            Sobre Nosotros
-                        </Link>
-                        <Link className="navbar-item">
-                            Oportunidades
-                        </Link>
-                        <Link className="navbar-item">
-                            Contacto
-                        </Link>
-                        <hr className="navbar-divider"/>
-                        <Link className="navbar-item">
-                            Reportar falla
-                        </Link>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div className="navbar-end">
-                    <div className="navbar-item">
-                        <div className="buttons">
-                        <Link className="button is-primary">
-                            <strong>Registrate!</strong>
-                        </Link>
-                        <Link className="button is-light">
-                            Iniciar Sesion
-                        </Link>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </nav>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Navbar.Brand href="#home">
+                    <img
+                        alt=""
+                        src="/logo.svg"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                    />{' '}
+                    React Bootstrap
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                    <Nav.Link href="#features">Features</Nav.Link>
+                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                    <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    </NavDropdown>
+                    </Nav>
+                    <Nav>
+                    <Nav.Link href="#deets">More deets</Nav.Link>
+                    <Nav.Link eventKey={2} href="#memes">
+                        Dank memes
+                    </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
             
         )
     }
