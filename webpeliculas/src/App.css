@@ -54,6 +54,9 @@
   border-radius: 5px;
 }
 
+/*************************************** MOVIE ***************************************************/
+
+
 /****************************************************************************************************/
 .card-content{
   background-color:rgb(49, 49, 49) !important;
@@ -69,7 +72,7 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-  
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,4 +158,17 @@
   padding: 10px;
   margin: 15px 0px 15px 0px;
   
+}
+
+#prueba{
+  background-color: #000;
+  width: 100px;
+  height: 100px;
+  border-radius: 20;
+}
+
+.hola{
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
 }

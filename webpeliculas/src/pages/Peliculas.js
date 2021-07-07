@@ -52,6 +52,13 @@ export class Peliculas extends Component {
              </div>
             }
           </div>
+          <div id="prueba">
+            <ul>
+              <li className="hola">
+
+              </li>
+            </ul>
+          </div>
           <Footer></Footer>
         </div>
         
